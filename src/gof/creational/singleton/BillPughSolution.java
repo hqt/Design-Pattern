@@ -1,7 +1,5 @@
 package gof.creational.singleton;
 
-import java.util.LinkedList;
-
 public class BillPughSolution {
 
 	public static class SearchBox {
@@ -33,22 +31,6 @@ public class BillPughSolution {
 		
 		public boolean isContains() {
 			return isContains(searchWord);
-		}
-		
-		static void nonTail(int i) {
-			if (i > 0) {
-				nonTail(i-1);
-				System.out.print(i + ", ");
-				nonTail(i-1);
-			}
-		}
-		
-		static void process(char c) {}
-		
-		public static void main(String[] args) {
-			nonTail(3);
-			Object o = new Integer(5);
-			String s = (String) o;
 		}
 	}
 }
